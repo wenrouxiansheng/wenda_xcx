@@ -1,0 +1,145 @@
+{
+	"pages": [{
+		"path": "pages/school/index",
+		"style": {
+			"navigationBarTitleText": "院校专业信息查询"
+		}
+	}, {
+		"path": "pages/school/result"
+	},{
+		"path": "pages/school/kefu"
+	},{
+		"path": "pages/test/index",
+		"style": {
+			"navigationBarTitleText": "考研慌张度测试"
+		}
+	},
+		{
+			"path":"pages/wd/index",
+			"style":{
+				"navigationStyle":"custom",
+			"enablePullDownRefresh": true,
+			"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path":"pages/wd/toc",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/wd/quesList",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/wd/detail",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/wd/answer",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/index",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/Improve",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/myOrder",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/myQuestions",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/problem",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/me/tecaW",
+			"style":{
+				 "navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/login/index",
+			"style":{
+				 "navigationBarTitleText": "用户登录"
+			}
+		}
+		
+	
+	],
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"height": "50px",
+		"fontSize": "10px",
+		"iconWidth": "24px",
+		"spacing": "3px",
+		"list": [{
+			"pagePath": "pages/school/index",
+			"iconPath": "static/images/img4.png",
+			"selectedIconPath": "static/images/img1.png",
+			"text": "院校"
+		}, 
+		{
+			"pagePath": "pages/wd/index",
+			"iconPath": "static/images/ltab-2.png",
+			"selectedIconPath": "static/images/ltab-2active.png",
+			"text": "问答"
+		},
+		{
+			"pagePath": "pages/test/index",
+			"iconPath": "static/images/img2.png",
+			"selectedIconPath": "static/images/img5.png",
+			"text": "测试"
+		},
+		{
+			"pagePath": "pages/me/index",
+			"iconPath": "static/images/ltab-4.png",
+			"selectedIconPath": "static/images/ltab-4active.png",
+			"text": "我的"
+		}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "院校信息查询",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#007AFF"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "test", //模式名称
+				"path": "pages/login/index", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
