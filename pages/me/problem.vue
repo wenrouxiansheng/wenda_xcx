@@ -112,12 +112,13 @@
 				})
 			},
 			file(){
+				let that=this;
 				uni.chooseImage({
 					count:5,
-					success:res=>{
-						console.log(res);
-						this.img=res.tempFilePaths;
-						scImg({
+					success:async (res) => {
+						console.log(res,"Asd");
+						await that.submitImg(res.tempFilePaths);
+						/* scImg({
 							url:"api/xcx/v1/file/images",
 							img:res.tempFilePaths[0],
 							data:{
@@ -125,11 +126,16 @@
 							}
 						}).then(res => {
 							console.log(res);
-						})
+						}) */
 					},
-					fail:res=>{
+					fail:res => {
 						console.log(res);
 					}
+				})
+			},
+			async submitImg(data){
+				data.forEach((item,index) => {
+					console.log(item,index);
 				})
 			},
 			moveHandle(){
