@@ -98,7 +98,11 @@
 				tcShow:false
 			}
 		},
-		onLoad(){
+		/* onLoad(){
+			this.bl=getApp().globalData.gloTop;
+			console.log(this.bl,"asdaa")
+		}, */
+		mounted(){
 			this.bl=getApp().globalData.gloTop;
 		},
 		methods:{
@@ -136,6 +140,11 @@
 			async submitImg(data){
 				data.forEach((item,index) => {
 					console.log(item,index);
+					scImg({
+						file:item
+					}).then(res => {
+						console.log(res);
+					})
 				})
 			},
 			moveHandle(){

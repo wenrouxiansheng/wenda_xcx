@@ -24,8 +24,13 @@ export function perfect(data) {
 	})
 }
 //上传图片
-export function scImg(obj){
-	return new Promise((resolve, reject) => {
+export function scImg(data){
+	return http({
+		method: 'post',
+		url: 'api/xcx/v1/file/images',
+		data: data
+	})
+	/* return new Promise((resolve, reject) => {
 	const systemInfo = uni.getSystemInfoSync();
 	const systemInfoHeaders = {
 		'device-name': systemInfo.brand, // 设备名称
@@ -48,7 +53,7 @@ export function scImg(obj){
 	                resolve(uploadFileRes);
 	            }
 		})
-	})
+	}) */
 }
 //话题选择列表
 export function xzhtProblem(data) {

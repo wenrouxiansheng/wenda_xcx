@@ -6,7 +6,7 @@
 			merchant_id: 1,
 			member_info:'',
 			member_access_token:'',
-			gloTop:"asdasd",
+			gloTop:"",
 			userInfo:""
 		},
 		onLaunch: function() {
@@ -14,7 +14,7 @@
 			uni.getSystemInfo({
 			    success: function (res) {
 				   that.globalData.gloTop=res.statusBarHeight;
-				   console.log(that.globalData.gloTop);
+				   console.log(that.globalData.gloTop,"高度");
 			    }
 			});
 			

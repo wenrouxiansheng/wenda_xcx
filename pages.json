@@ -137,7 +137,7 @@
 		"list": [
 			{
 				"name": "test", //模式名称
-				"path": "pages/me/problem", //启动页面，必选
+				"path": "pages/login/index", //启动页面，必选
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
 		]
